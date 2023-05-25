@@ -4,8 +4,6 @@ require("dotenv").config();
 async function getData() {
   API_KEY = process.env.API_KEY;
 
-  console.log(process.env);
-
   try {
     const json = await fetch(
       "https://hodlhodl.com/api/v1/contracts/my?filters[status]=completed",
